@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background: #6f777a;
+}
+.wrapper{
+    margin-top: 100px;
+    flex-direction: column;
+    gap: 20px;
+    position: fixed;
+}
+
+.wrapper .form_container{
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    align-items: center;
+}
+
+.form_container form input{
+    padding: 5px;
+    outline: none;
+    font-size: 18px;
+    width: 250px;
+    border: 3px solid #75836a;
+    background: #e9e9e9;
+}
+
+.form_container .submitBtn{
+    padding: 8px 10px;
+    font-size: 18px;
+    background: red;
+    color: #fff;
+    border: 3px solid red;
+    outline: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    user-select: none;
+}
+
+.form_container .submitBtn.active{
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.countryInfoContainer{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 50px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    z-index: -111;
+}
+
+.countryInfoContainer h4{
+    font-size: 25px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.countryInfoContainer h3{
+    text-align: center;
+    color: red;
+    font-weight: 400;
+}
+
+.countryInfoContainer img{
+    width: 200px;
+    display: block;
+    margin: auto;
+    filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.3));
+}
+
+.countryInfoContainer h2{
+    margin-top: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+ul{
+    width: 250px;
+    max-height: 350px;
+    overflow: auto;
+}
+
+ul li{
+    list-style: none;
+    border: 1px solid #e3e3e3;
+    border-top: unset;
+}
+ul li button{
+    background: transparent;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    transition: 0.2s;
+}
